@@ -25,7 +25,7 @@ def custom_exc(shell, etype, evalue, tb, tb_offset=None):
  # print ("sending mail")
  # send_mail_to_myself(sstb)
  # this registers a custom exception handler for the whole current notebook
- get_ipython().set_custom_exc((Exception,), custom_exc)
+get_ipython().set_custom_exc((Exception,), custom_exc)
 #------------------------------------------
 # Function to play a sound (to put at the end of a long job)
 def beep_completed():
