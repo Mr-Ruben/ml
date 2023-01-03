@@ -5,6 +5,8 @@ from IPython.display import Audio, display
 #-----------------------------------
 def download_audio_files(location:str="~/jupyter_sounds") -> None:
     "Downloads the audio files to the specified location"
+    
+    x="""
     #electricity jet register baby error success
     %mkdir --parents ~/jupyter_sounds
     %cd ~/jupyter_sounds
@@ -20,7 +22,9 @@ def download_audio_files(location:str="~/jupyter_sounds") -> None:
 
     # Short Error Beep sound
     !wget -O sound_error_beep.wav  http://soundbible.com/grab.php?id=419&type=wav
-    return
+    """
+    print(x)
+    return 
 
 # ----- error sound --------
 def play_sound_error(self, etype, value, tb, tb_offset=None):
